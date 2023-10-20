@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style: none;
+}
+nav img {
+  width: 50px;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  padding: 24px;
+}
+a:hover {
+  color: #f85514;
+}
+nav ul li:first-child a {
+  color: #f85514;
+}
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1500754088824-ce0582cfe45f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGxpZ2h0JTIwYmFja2dyb3VuZHxlbnwwfDB8MHx8fDA%3D");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+    width: 40vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.content h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.content h1:first-child{
+    color: #f85514;
+}
+.actions{
+    margin: 16px;
+    display: flex;
+    gap: 15px;
+}
+.actions input {
+    padding: 8px 16px;
+    border-radius: 22px;
+    border: none;
+}
+.actions input:first-child {
+    background-color: #f85514;
+    color: white;
+}
+.company{
+width: 100vw;
+height: 70vh;
+padding-top: 20px
+}
+.co_company{
+    width: 30vw;
+    display: flex;
+   flex-direction: column;
+gap: 16px;
+}
+.company p {
+    color: gray;
+   
+    
+}
+.co_company input{
+     padding: 8px 16px;
+    border-radius: 22px;
+    border-color: blueviolet;
+    background-color: white;
+    color: blueviolet;
+    width: fit-content;
+}
+.co_company h4 span{
+    color: #f85514;
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
+.item{
+    
+}
