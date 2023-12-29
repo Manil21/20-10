@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-li {
+nav li {
   list-style: none;
 }
 nav img {
@@ -25,6 +25,10 @@ nav {
   justify-content: center;
   gap: 160px;
   padding: 24px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
 }
 a:hover {
   color: #f85514;
@@ -42,68 +46,260 @@ nav ul li:first-child a {
   justify-content: center;
   align-items: center;
 }
-.content{
-    width: 40vw;
-    color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+.content {
+  width: 40vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 .content h1 {
-    font-size: 40px;
-    font-weight: 500;
+  font-size: 40px;
+  font-weight: 500;
 }
-.content h1:first-child{
-    color: #f85514;
+.content h1:first-child {
+  color: #f85514;
 }
-.actions{
-    margin: 16px;
-    display: flex;
-    gap: 15px;
+.actions {
+  margin: 16px;
+  display: flex;
+  gap: 15px;
 }
 .actions input {
-    padding: 8px 16px;
-    border-radius: 22px;
-    border: none;
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: none;
 }
 .actions input:first-child {
-    background-color: #f85514;
-    color: white;
+  background-color: #f85514;
+  color: white;
 }
-.company{
-width: 100vw;
-height: 70vh;
-padding-top: 20px
+.company {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0px;
 }
-.co_company{
-    width: 30vw;
-    display: flex;
-   flex-direction: column;
-gap: 16px;
+.co_company {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .company p {
-    color: gray;
-   
-    
+  color: gray;
 }
-.co_company input{
-     padding: 8px 16px;
-    border-radius: 22px;
-    border-color: blueviolet;
-    background-color: white;
-    color: blueviolet;
-    width: fit-content;
+.co_company input {
+  padding: 8px 16px;
+  border-radius: 22px;
+  border-color: blueviolet;
+  background-color: white;
+  color: blueviolet;
+  width: fit-content;
+  cursor: pointer;
 }
-.co_company h4 span{
-    color: #f85514;
+.co_company input :hover {
+  background-color: black;
+  color: white;
+}
+.co_company h4 span {
+  color: #f85514;
 }
 .icon {
-    height: 60px;
-    width: 60px;
-    background-color: red;
-    border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
 }
-.item{
-    
+.item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.company_right {
+  width: 50vw;
+  border-left: 2px solid #f85514;
+  position: relative;
+  height: 30vh;
+}
+.icon_text p {
+  width: 40vw;
+}
+.content_company {
+  position: absolute;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.item:first-child {
+  margin-top: -20px;
+}
+.item:last-child {
+  margin-bottom: -20px;
+}
+
+.service {
+  width: 100vw;
+  height: 70vh;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  background-color: white;
+  padding: 16px;
+}
+.in_carte {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 2px solid #f85514;
+  border-radius: 50%;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.in_carte img {
+  width: 60px;
+  height: 60px;
+}
+.carte p {
+  font-size: 14px;
+  text-align: center;
+  gap: 16px;
+  color: gray;
+}
+
+.cartes {
+  display: flex;
+  gap: 24px;
+}
+
+.intel_card {
+  height: 200px;
+  width: 230px;
+  background-image: url("https://images.pexels.com/photos/6097766/pexels-photo-6097766.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intel {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.305);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.overlay i {
+  font-size: 32px;
+}
+.intel_left {
+  display: grid;
+  grid-template-columns: repeat(2, 230px);
+  gap: 16px;
+}
+.intel_card:nth-child(1) {
+  background-image: url("https://images.pexels.com/photos/6097766/pexels-photo-6097766.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+.intel_card:nth-child(2) {
+  background-image: url("https://media.istockphoto.com/id/1335708681/fr/photo/piles-de-livres-pour-lenseignement-de-la-biblioth%C3%A8que-du-coll%C3%A8ge-de-connaissances-fond-vert.jpg?b=1&s=612x612&w=0&k=20&c=LqcamIstLi4cuWM6Skb5yhqgN5nh2eDbwf7Rz7_Oz7Y=");
+}
+.intel_card:nth-child(3) {
+  background-image: url("https://media.istockphoto.com/id/140982941/fr/photo/pr%C3%A9parez-vous-pour-%C3%A9crire-larriv%C3%A9e.jpg?b=1&s=612x612&w=0&k=20&c=GSar2N4aNpwm-TfDjgTSs82lMwNQSCm1Zj6wuEZeHfE=");
+}
+.intel_card:nth-child(4) {
+  background-image: url("https://images.pexels.com/photos/1684149/pexels-photo-1684149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.intel_right {
+  display: flex;
+  justify-content: right;
+  justify-items: center;
+  padding: 40px 0px;
+}
+.lft {
+  gap: 20px;
+}
+.lft ul li {
+  font-weight: bolder;
+  list-style: disc;
+  gap: 16px;
+  list-style-image: linear-gradient(to left bottom, red, blue);
+  margin-left: 13px;
+}
+.lft input {
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: none;
+  margin-top: 20px;
+  background-color: #f85514;
+  color: white;
+}
+.lft p {
+  color: gray;
+  margin-bottom: 10px;
+}
+.end {
+  width: 100vw;
+  height: 70vh;
+  background-color: #11032a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  color: white;
+}
+.col1 {
+  font-size: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.col1 p {
+  font-size: 15px;
+  text-align: center;
+}
+.col1 i{
+  font-size: 80px;
+}
+.end h5{
+  font-size: 20px;
+}
+.end input{
+   padding: 8px 16px;
+  border-radius: 22px;
+  border: none;
+  margin-top: 20px;
+  background-color: #9d9e9b;
+  color: purple;
 }
